@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/aileenlaksmonolie/qrscanner/static/css/main.a5825584.css",
+    "main.js": "/aileenlaksmonolie/qrscanner/static/js/main.348b4f19.js",
+    "static/js/787.28cb0dcd.chunk.js": "/aileenlaksmonolie/qrscanner/static/js/787.28cb0dcd.chunk.js",
+    "service-worker.js": "/aileenlaksmonolie/qrscanner/service-worker.js",
+    "index.html": "/aileenlaksmonolie/qrscanner/index.html",
+    "main.a5825584.css.map": "/aileenlaksmonolie/qrscanner/static/css/main.a5825584.css.map",
+    "main.348b4f19.js.map": "/aileenlaksmonolie/qrscanner/static/js/main.348b4f19.js.map",
+    "787.28cb0dcd.chunk.js.map": "/aileenlaksmonolie/qrscanner/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5825584.css",
+    "static/js/main.348b4f19.js"
+  ]
+}
