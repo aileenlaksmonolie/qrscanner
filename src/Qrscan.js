@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import QrReader from "react-web-qr-reader";
+// import {QrReader} from "react-qr-reader";
 import axios from 'axios';
 import styles from './Qrscan.module.css';
 
@@ -16,6 +17,7 @@ const Qrscan = () => {
 	const handleScan = (result) => {
 		if(result!==""){
             setLoading("Loading....");
+            setAPIResult("");
             setResult(result.data);
             axios.post(`https://icnmusical.com/api/scanner/check_in`, { "encrypted_ticket_item_id":result.data })
             .then(res => {
@@ -40,12 +42,12 @@ const Qrscan = () => {
 
 	return (
 		<div className={styles.container}>
-			<QrReader
+			{(loading==="done!" || loading==="") && <QrReader
 			delay={500}
 			style={previewStyle}
 			onError={handleError}
 			onScan={handleScan}
-			/>
+			/>}
 			<div className={styles.result}>scanning status: {loading}</div>	
 			<div className={styles.result}>checkin status: {APIResult}</div>	
 		</div>
